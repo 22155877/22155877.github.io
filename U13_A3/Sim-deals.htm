@@ -73,30 +73,174 @@ padding: 12px;
 //modified by Neil Wickham
 //credit must stay intact for use 
 var Digital=new Date()
-Var hours=Digital.getHours()
+var hours=Digital.getHours()
 //Configure message below to your own.
 if (hours>=0&&hours<=12) //MESSAGE FOR MORNING (00:00-11:59)
 document.write('<b>Good Morning, Welcome to our website.</b>')
 else if (hours>12&&hours<=17) //MESSAGE FOR AFTERNOON (12:01-17:00)
 document.write ('<b>Good Afernoon, Welcome to our website.</b>')
 else //MESSAGE FOR THE REST OF THE DAY (17:00-23:59)
-document.write('<b>Good Evening, Welcome to our Website.</b'>
+document.write('<b>Good Evening, Welcome to our Website.</b'>)
 </script>
 
+<br>
 
-<iframe width="450" height="350"
-src="https://www.youtube.com/embed/tb5ui7T-oNA">
-</iframe>
+<img src="images/SIM-Only-deals image.webp"i frame width="300" height="200"alt="Sim only deals image">
 
+<br>
+<style>
+table,th, td {
+ border:1px solid black;
+ border-collapse:collapse ;
+}
+</style>
 
-<iframe a width="450" height="350" src="https://www.youtube.com/embed/onHKBLC1On8" title="Mobile Accessories Name. Types of Mobile Accessories. Phone Gadget name list. Mobile accesories list" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2>Table  of filters </h2>
 
+<table style="width:100%"> 
+	<tr>
+		<th rowspan="6">Monthly cost</th>
+		<td>Up to £10 a month</td>
+	</tr>
+	<tr>
+		<td>Up to £20 a month</td>
+	</tr>
+	<tr>
+	<td>Up to £30 a month</td>
+	</tr>
+	<tr>
+	<td>Up tp £40 a month</td>
+	</tr>
+	
+	<tr>
+	<td>Up to £50 a month</td>
+	</tr>
+	<tr>
+	<td>Up to £50 a month</td>
+	</tr>
+	<tr>
+		<th rowspan="7">Data</th>
+		<td>1GB and more</td>
+	</tr>
+	<tr>
+		<td>10GB and more</td>
+	</tr>
+	<tr>
+		<td>30GB  and more </td>
+	</tr>
+	<tr>
+		<td>50GB and more</td>
+	</tr>
+	<tr>
+		<td>100GB and more</td>
+	</tr>
+	<tr>
+		<td>250GB and more</td>
+	</tr>
+	<tr>
+	<td>Unlimited</td>
+	</tr>
+	
+	<tr>
+		<th rowspan="8">Network</th>
+		<td>vodafone</td>
+	</tr>
+	<tr>
+		<td>o2</td>
+	</tr>
+	<tr>
+		<td>EE pay</td>
+	</tr>
+	<tr>
+		<td>Sky mobile</td>
+	</tr>
+	<tr>
+		<td>3 Three mobile</td>
+	</tr>
+	<tr>
+		<td>SMARTY sim deals </td>
+	</tr>
+	<tr>
+		<td>iD Mobile sime deals </td>
+	</tr>
+	<tr>
+		<td>Tesco mobile</td>
+	</tr>
 
-<a href="Services.htm">Services</a>
-<div style="padding-left:16px">
- <h2>services</h2>
- </div>
+<br>
+<br>
 
+</table>
+	<style>
+	table, th, td{
+		border:1px solid black
+		border-collapse:V-shaped collapse 
+	}
+	</style>
+	<table style="width:80%">
+		<tr>
+			<th>Pay Monthly</th>
+			<td>upgrades</td>
+		</tr>
+		
+</table>
+
+</script>
+</head>
+<body>
+
+<h2>Images of sim </h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/4 g.jpg"width="50%" alt="4 g sim card">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/EE.png"width="50%" alt="EE sim card">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Vodafone sim.png"width="50%" alt="Vadafone sim card">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex=0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 
 </body>
 </html>

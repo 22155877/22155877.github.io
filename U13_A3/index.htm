@@ -69,20 +69,27 @@
 
 
 	<script>
-	//Time of day mesage script-by javascriptkit.com
-	//visit javascript kit(http://javascriptkit.com) for script
-	//modified by Neil Wickham
-	//credit must stay intact for use 
 	var Digital=new Date()
-	Var hours=Digital.getHours()
-	//Configure message below to your own.
-	if (hours>=0&&hours<=12) //MESSAGE FOR MORNING (00:00-11:59)
-	document.write('<b>Good Morning, Welcome to our website.</b>')
-	else if (hours>12&&hours<=17) //MESSAGE FOR AFTERNOON (12:01-17:00)
-	document.write ('<b>Good Afernoon, Welcome to our website.</b>')
-	else //MESSAGE FOR THE REST OF THE DAY (17:00-23:59)
-	document.write('<b>Good Evening, Welcome to our Website.</b'>
+var hours=Digital.getHours()
+
+//Configure message below to your own.
+if (hours>=5&&hours<=11) //MESSAGE FOR MORNING
+document.write('<b>Welcome to our site. Good morning visitor.</b>')
+else if (hours==12) //MESSAGE FOR NOON
+document.write('<b>It is high noon. Thanks for dropping by!</b>')
+else if (hours>=13&&hours<=17) //MESSAGE FOR AFTERNOON
+document.write('<b>Good afternoon, and thanks for visiting.</b>')
+else if (hours>=18&&hours<=20) //MESSAGE FOR EVENING (6pm-8pm)
+document.write('<b>Good evening. Hope you\'re enjoying the gentle breeze</b>')
+else if (hours>=21&&hours<=11) //MESSAGE FOR NIGHT (9pm-11pm)
+document.write('<b>Glad to see you this time of the night.</b>')
+else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
+document.write('<b>Wow, thanks for choosing to visit our site over sleep!</b>')
 	</script>
+
+<br>
+<br>
+<br>
 
 
 	<iframe width="450" height="350"
@@ -91,11 +98,15 @@
 
 
 	<iframe a width="450" height="350" src="https://www.youtube.com/embed/onHKBLC1On8" title="Mobile Accessories Name. Types of Mobile Accessories. Phone Gadget name list. Mobile accesories list" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<br>
 
 	<a href="Services.htm">Services</a>
 	<div style="padding-left:16px">
-	 <h2>services</h2>
+	 <h2>we specialise in certified mobile phone repairs for all major brands and models. Whether your device has a cracked screen, a faulty battery or software issues, our skilled technicians are here to help. We use high-quality replacement parts and the latest tools to ensure your phone is restored to full working order as quickly as possible.
+
+We pride ourselves on offering fast turnaround times, competitive prices, and excellent customer service. Whether you need a simple screen replacement or a more complex charging repair, you can trust us to handle your device securely and with care.
+
+Book an appointment online today and get your phone back to new today!</h2>
 	 </div>
 
 
