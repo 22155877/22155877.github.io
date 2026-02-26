@@ -65,6 +65,27 @@ padding: 12px;
 <a href="Accessories.htm">Accessories</a>:
 
 </p>
+
+<br>
+<br>
+
+<script>
+//Time of day mesage script-by javascriptkit.com
+//visit javascript kit(http://javascriptkit.com) for script
+//modified by Neil Wickham
+//credit must stay intact for use 
+var Digital=new Date()
+var hours=Digital.getHours()
+//Configure message below to your own.
+if (hours>=0&&hours<=12) //MESSAGE FOR MORNING (00:00-11:59)
+document.write('<b>Good Morning, Welcome to our website.</b>')
+else if (hours>12&&hours<=17) //MESSAGE FOR AFTERNOON (12:01-17:00)
+document.write ('<b>Good Afernoon, Welcome to our website.</b>')
+else //MESSAGE FOR THE REST OF THE DAY (17:00-23:59)
+document.write('<b>Good Evening, Welcome to our Website.</b>')
+</script>
+
+
 </nav>
 <meta name="viewport" contect="Width=device-width, initial-scale=1">
 <style>
@@ -156,21 +177,7 @@ padding: 12px;
 </div>
 
 
-<script>
-//Time of day mesage script-by javascriptkit.com
-//visit javascript kit(http://javascriptkit.com) for script
-//modified by Neil Wickham
-//credit must stay intact for use 
-var Digital=new Date()
-var hours=Digital.getHours()
-//Configure message below to your own.
-if (hours>=0&&hours<=12) //MESSAGE FOR MORNING (00:00-11:59)
-document.write('<b>Good Morning, Welcome to our website.</b>')
-else if (hours>12&&hours<=17) //MESSAGE FOR AFTERNOON (12:01-17:00)
-document.write ('<b>Good Afernoon, Welcome to our website.</b>')
-else //MESSAGE FOR THE REST OF THE DAY (17:00-23:59)
-document.write('<b>Good Evening, Welcome to our Website.</b'>
-</script>)
+
 
 </body>
 </html>
